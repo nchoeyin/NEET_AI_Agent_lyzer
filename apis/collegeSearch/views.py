@@ -34,3 +34,4 @@ class LyzrAgentApiAsyncView(View):
             return JsonResponse(response.json(), status=response.status_code)
         except Exception as e:
             return JsonResponse({'error': str(e)}, status=500)
+
